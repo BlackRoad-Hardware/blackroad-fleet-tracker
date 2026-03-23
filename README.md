@@ -1,42 +1,20 @@
 # blackroad-fleet-tracker
 
-Part of [BlackRoad-Hardware](https://github.com/BlackRoad-Hardware) — IoT & hardware intelligence platform.
+Vehicle/device fleet tracker with geofencing and Haversine distance
 
-## Overview
+## Organization
 
-| Repo | Description |
-|------|-------------|
-| blackroad-smart-home | Smart home controller: scenes, scheduling, device groups |
-| blackroad-sensor-network | IoT sensor aggregator with Z-score anomaly detection |
-| blackroad-automation-hub | Rules engine: triggers, conditions, actions |
-| blackroad-energy-optimizer | Energy tracking, peak analysis, CO2 equivalent |
-| blackroad-fleet-tracker | Fleet GPS tracking, geofencing, idle detection |
+**BlackRoad-Hardware** — IoT — sensors, firmware, fleet, Hailo-8
 
-## Install
+## BlackRoad OS
 
-```bash
-pip install -r requirements.txt
-```
+BlackRoad OS is a distributed AI operating system — 20 domains, 668 repositories, 1,000 AI agents, and sovereign infrastructure running on Raspberry Pis and Hailo-8 accelerators. No cloud dependency.
 
-## Usage
+- [blackroad.io](https://blackroad.io) — Main platform
+- [docs.blackroad.io](https://docs.blackroad.io) — Documentation
+- [GitHub](https://github.com/BlackRoad-Hardware) — This organization
 
-```bash
-python fleet-tracker.py   # runs demo
-```
+**Language:** Python
 
-## Tests
 
-```bash
-pytest test_fleet-tracker.py -v
-```
-
-## Architecture
-
-- Pure Python with SQLite persistence (WAL mode)
-- Thread-safe with per-operation locks
-- Self-initializing database on first run
-- Dataclass-based domain model
-
-## License
-
-© BlackRoad OS, Inc. All rights reserved.
+*© 2024-2026 BlackRoad OS, Inc. All Rights Reserved.*
